@@ -1,7 +1,10 @@
 package com.example.springboot;
 
+import com.example.springboot.models.repositories.RepositoryOnMem;
+import com.example.springboot.models.repositories.TurnoRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class Application {
@@ -10,4 +13,10 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
+    @Bean
+    public TurnoRepository createRepository() {
+
+        return new RepositoryOnMem();
+
+    }
 }
