@@ -11,10 +11,8 @@ import org.springframework.validation.annotation.Validated;
 @Validated
 public class TurnoInputDTO {
 
-    @NotNull(message = "El nombre no debe estar vacio" )
     private String razaPaciente;
 
-    @NotEmpty(message = "El nombre no debe estar vacio")
     private String nombrePaciente;
 
 }
