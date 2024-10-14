@@ -1,6 +1,5 @@
 package com.example.springboot.models.entities;
 
-import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,11 +11,11 @@ public class Turno {
 
     private static Long autoincremental = 1l;
 
-    Long id;
+    private Long id;
 
-    String razaPaciente;
+    private String razaPaciente;
 
-    String nombrePaciente;
+    private String nombrePaciente;
 
     public Turno() {
         this.id = autoincremental;
